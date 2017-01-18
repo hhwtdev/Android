@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+        android:id="@android:id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textviewline"
+        android:drawablePadding="8dp"
+        android:drawableRight="@drawable/filterwb_48"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearance"
+        android:textColor="@color/colorPrimary"
+        app:typeface="robotoBold" />
+
+</LinearLayout>

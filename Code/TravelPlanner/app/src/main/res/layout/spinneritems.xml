@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+        android:id="@android:id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical|start"
+        android:paddingBottom="@dimen/mdtp_date_picker_header_text_size"
+        android:paddingLeft="@dimen/mdtp_date_picker_header_text_size"
+        android:paddingRight="@dimen/mdtp_date_picker_header_text_size"
+        android:paddingTop="@dimen/mdtp_date_picker_header_text_size"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#fff"
+        app:typeface="robotoBold" />
+</LinearLayout>

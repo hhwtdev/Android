@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:local="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/bgyellow"
+            android:gravity="center_vertical"
+            android:minHeight="?attr/actionBarSize"
+            local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="Success!"
+                android:textSize="20dp"
+                android:textColor="@color/blackcolorview"
+                local:typeface="robotoBold" />
+           <!-- <ImageView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+
+                android:src="@drawable/leftnavidown"
+                android:tint="@color/blackcolorview"
+                />-->
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:src="@android:drawable/ic_menu_edit"
+                android:tint="@color/white"
+                android:visibility="gone" />
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                local:typeface="robotoRegular" />
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                local:typeface="robotoRegular" />
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/bgfeedback"
+
+            android:orientation="vertical">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+
+                android:background="@drawable/makeenquiry">
+
+
+                <EditText
+                    android:id="@+id/adddescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:editable="true"
+                    android:gravity="start"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:text=""
+android:enabled="false"
+                    android:hint="Thanks for your information. The tour operator will contact  you via email shortly!"
+                    android:textColor="@color/blackcolorview"
+                    android:textColorHint="@color/blackcolorview"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/continueexp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:padding="8dp"
+                android:background="#f4a01c"
+
+                android:text="Continue Exploring"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#000000"
+                />
+           <!-- android:background="#e86e02"-->
+        </LinearLayout>
+    </LinearLayout>
+
+
+

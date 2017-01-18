@@ -1,0 +1,28 @@
+<!--
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:fontFamily="sans-serif"
+    android:textColor="@color/colorPrimaryDark"
+    android:textAppearance="?android:textAppearanceMedium"
+    />
+-->
+
+
+<com.hhwt.travelplanner.widgets.font.RobotoTextView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:textAppearanceMedium"
+    app:typeface="robotoRegular"
+    android:background="@android:color/transparent"
+    android:ellipsize="marquee"
+    android:layout_marginBottom="5dp"
+    android:textColor="@color/colorPrimaryDark" />

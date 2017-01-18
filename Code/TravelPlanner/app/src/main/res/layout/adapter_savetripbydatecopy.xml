@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (C) 2015 Antonio Leiva
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:clickable="true"
+    card_view:cardBackgroundColor="#ffffff"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.hhwt.travelplanner.widgets.MaterialRippleLayout
+            style="@style/RippleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            app:rippleColors="@color/main_color_grey_400">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:paddingTop="@dimen/spacing_medium"
+                    android:text="@string/_add_activities"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/colorPrimary"
+                    app:typeface="robotoBold" />
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:text="@string/_add_activities"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/colorPrimary"
+                    app:typeface="robotoBold" />
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subtitle"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:text="@string/_add_activities"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    app:typeface="robotoBold" />
+
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_xlarge"
+                    android:layout_below="@+id/address"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:text="@string/_add_activities"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    app:typeface="robotoBold" />
+
+            </RelativeLayout>
+
+        </com.hhwt.travelplanner.widgets.MaterialRippleLayout>
+    </FrameLayout>
+</android.support.v7.widget.CardView>

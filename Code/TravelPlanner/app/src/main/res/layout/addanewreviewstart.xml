@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/neuiblueclor"
+            >
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+
+            android:background="@color/white" >
+
+            <LinearLayout
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+               >
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/clear"
+
+                android:tint="@color/newuigray"/>
+            <ImageView
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+              android:layout_margin="10dp"
+                android:src="@drawable/mike"
+                android:tint="@color/newuigray"/>
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/searchviewimg"
+                android:tint="@color/newuigray" />
+
+            <EditText
+                android:id="@+id/edSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/search"
+                android:layout_toRightOf="@id/btnLeft"
+                android:background="@null"
+                android:hint="Search for places "
+                android:imeOptions="actionSearch"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true" />
+        </RelativeLayout>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/notfindplace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Can’t find a place?"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:focusableInTouchMode="true"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                app:typeface="robotoRegular"
+                />
+
+             <ListView
+           android:id="@+id/mListView"
+           android:layout_width="match_parent"
+           android:layout_height="300dp"
+           android:layout_below="@id/top"
+           android:layout_marginBottom="5dp"
+           android:layout_marginTop="5dp"
+           android:cacheColorHint="@android:color/transparent"
+           android:divider="#d3ccc2"
+           android:dividerHeight="2dp" >
+       </ListView>
+
+
+
+
+
+    <!--        <LinearLayout
+                android:id="@+id/findplace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:src="@drawable/samdelete"
+    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:id="@+id/first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Ihwa Mural Village"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:focusableInTouchMode="true"
+                        android:background="@android:color/transparent"
+android:textColorHint="@color/bb_darkBackgroundColor"
+                        app:typeface="robotoRegular"
+                        />
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:id="@+id/second"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Sights &amp; Landmarks \n Seoul"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:focusableInTouchMode="true"
+                        android:background="@android:color/transparent"
+                        app:typeface="robotoRegular"
+                        android:textColorHint="@color/bb_darkBackgroundColor"
+                        />
+                    </LinearLayout>
+                </LinearLayout>-->
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/reviewadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/reviewfolate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/mapnewui"
+                android:tint="#fff"
+                app:backgroundTint="@color/neuiblueclor" />
+
+
+            <TextView
+                android:id="@+id/reiewsadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Add a new place"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/blackcolorview"
+                />
+
+
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d3ccc2"
+            android:layout_marginTop="5dp"></View>
+        </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+</LinearLayout>

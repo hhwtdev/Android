@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.hhwt.travelplanner.widgets.font.MaterialDesignIconsTextView
+        android:id="@+id/CheckBoxtoselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingRight="@dimen/activity_horizontal_mediummargin"
+        android:text="@string/material_icon_check_empty"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26dp" />
+
+    <com.hhwt.travelplanner.widgets.CircularTextView
+        android:id="@+id/selecteddays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_mediummargin"
+        android:paddingRight="@dimen/activity_horizontal_mediummargin"
+        android:text="Sunday"
+        app:typeface="robotoBlack"
+        android:textColor="@android:color/black" />
+</LinearLayout>

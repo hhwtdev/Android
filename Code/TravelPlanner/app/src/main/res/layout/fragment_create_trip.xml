@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBackground"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".7">
+
+            <com.hhwt.travelplanner.widgets.RectImageView
+                android:id="@+id/cityIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rectseoul" />
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/cityTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/mdtp_transparent_black"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:text="@string/locale"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@color/white"
+                app:typeface="robotoBold" />
+        </RelativeLayout>
+
+        <com.hhwt.travelplanner.widgets.font.RobotoEditText
+            android:id="@+id/entertripname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_weight=".3"
+            android:background="@drawable/edittext_selector"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/hint_entertrip"
+            android:scrollbars="horizontal"
+            android:singleLine="true"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/white"
+            android:textColorHint="@color/psts_background_tab_pressed_ripple"
+            app:typeface="robotoBold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6"
+        android:orientation="vertical">
+
+        <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/textviewline"
+            android:drawableRight="@drawable/date_48"
+            android:gravity="center"
+            android:paddingBottom="@dimen/cpb_stroke_width"
+            android:paddingTop="@dimen/cpb_stroke_width"
+            android:tag="@string/start_date"
+            android:text="@string/start_date"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorPrimary"
+            app:typeface="robotoBold" />
+
+        <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/start_date"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/textviewline"
+            android:drawableRight="@drawable/date_48"
+            android:gravity="center"
+            android:paddingBottom="@dimen/cpb_stroke_width"
+            android:paddingTop="@dimen/cpb_stroke_width"
+            android:tag="@string/end_date"
+            android:text="@string/end_date"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorPrimary"
+            app:typeface="robotoBold" />
+
+        <com.hhwt.travelplanner.widgets.MaterialRippleLayout
+            style="@style/RippleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:focusable="false"
+            app:rippleColors="@color/main_color_grey_400">
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/btncreateatrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/tripcolor"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="@string/title_createtrip"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/white"
+                app:typeface="robotoBold" />
+        </com.hhwt.travelplanner.widgets.MaterialRippleLayout>
+    </RelativeLayout>
+
+</LinearLayout>

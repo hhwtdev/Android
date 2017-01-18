@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/datereviewfirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:id="@+id/linearlay"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+
+            android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/datereviewfirstprofile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/appicon"
+            app:border_color="#FF000000" />
+</LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingLeft="10dp">
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/datereviewfirstnamelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:maxLines="2"
+                android:gravity="left"
+                android:fontFamily="sans-serif"
+                android:text="elainetee"
+                android:textSize="18dp"
+                android:textColor="@color/blackcolorview"
+                />
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/datereviewfirstdays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+
+                android:gravity="left"
+                android:fontFamily="sans-serif"
+                android:text="a week ago"
+                android:layout_below="@+id/datereviewfirstnamelist"
+                android:textSize="16dp"
+                android:layout_marginTop="3dp"
+
+                />
+
+            <RatingBar
+                android:id="@+id/datereviewfirstitem_ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/datereviewfirstdays"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/spacing_medium"
+                android:stepSize=".5"
+                android:isIndicator="true"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="@dimen/spacing_medium"></RatingBar>
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/datereviewfirsttitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:maxLines="2"
+                android:gravity="left"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/datereviewfirstitem_ratingBar"
+                android:text="Consectetur adipisning!"
+                android:layout_marginTop="8dp"
+                android:textSize="18dp"
+                android:textColor="@color/blackcolorview"
+                />
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/datereviewfirstsubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:maxLines="2"
+                android:gravity="left"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/datereviewfirsttitle"
+                android:text="Lorem ipsum dolor sir amet,consectetur adipiscing elit."
+                android:textSize="16dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/blackcolorview"
+                />
+
+            <LinearLayout
+                android:id="@+id/firsli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/datereviewfirstsubtitle">
+
+                <ImageView
+                    android:id="@+id/likecountrycont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/likeup"
+                    android:tint="@color/neuiblueclor"/>
+                />
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/firstslikecont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/main_color_grey_600"
+                    />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/nvrefirst"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d3ccc2"
+                android:paddingBottom="5dp"
+                android:layout_below="@+id/firsli"
+                android:layout_marginTop="8dp"></View>
+
+        </RelativeLayout>
+
+        </LinearLayout>
+</LinearLayout>

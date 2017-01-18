@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="?attr/colorPrimary"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/apptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:clickable="true"
+            android:src="@drawable/app_name"
+            android:tint="@color/white" />
+
+        <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="Submit"
+            android:textColor="@color/white"
+            local:typeface="robotoRegular" />
+
+        <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            local:typeface="robotoRegular" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:src="@android:drawable/ic_menu_search"
+            android:tint="@color/white"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:src="@android:drawable/ic_menu_edit"
+            android:tint="@color/white"
+            android:visibility="gone" />
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/container_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tap to rate"
+                        local:typeface="robotoLight" />
+
+                    <RatingBar
+                        android:id="@+id/item_ratingBar"
+                        style="@style/RationBarCreateReiew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:minHeight="?android:actionBarSize"
+                        android:stepSize="1"></RatingBar>
+
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                        android:id="@+id/place"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext_selector"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="@string/hint_choose"
+                        android:inputType="text|textNoSuggestions"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        local:typeface="robotoRegular" />
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                        android:id="@+id/reviewtitle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext_selector"
+                        android:hint="@string/hint_title"
+                        android:inputType="text|textNoSuggestions"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        local:typeface="robotoRegular" />
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                        android:id="@+id/selectdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext_selector"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/date_48"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="Visited Date?"
+                        android:minHeight="?android:actionBarSize"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:tag="@string/start_date"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        local:typeface="robotoRegular" />
+
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                        android:id="@+id/message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext_selector"
+                        android:gravity="left"
+                        android:hint="@string/hint_yourreview"
+                        android:inputType="textMultiLine|textNoSuggestions"
+                        android:maxLines="6"
+                        android:minHeight="180dp"
+                        android:padding="10dp"
+                        android:scrollbars="vertical"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@color/white"
+                        local:typeface="robotoRegular" />
+
+
+                    <Button
+                        android:id="@+id/btnsubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="20dip"
+                        android:background="@drawable/rounded_backroundsecond"
+                        android:elevation="40dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="Submit"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

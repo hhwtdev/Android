@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/parentview"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            >
+
+            <TextView
+                android:id="@+id/clearall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="clear all"
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"
+
+
+                android:gravity="center"
+                android:textColor="@color/neuiblueclor"
+                />
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:layout_weight="1"
+
+
+                android:textColor="@color/neuiblueclor"
+                />
+
+
+            <TextView
+                android:id="@+id/applyfilter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Apply filters"
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:layout_weight="2"
+
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/neuiblueclor"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_above="@+id/footer">
+
+
+
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/imgbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="#00cccb">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/thingstodowhite"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tab"
+                        android:hint="Things to do"
+                        android:gravity="center"
+                        android:text="Things To Do"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/tab_label"
+                        android:textColor="@color/white"
+
+                        android:fontFamily="@string/font_fontFamily_medium"/>
+
+                    <!--  android:textColor="@color/main_color_grey_500"-->
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Minimum Rating"
+                    android:textSize="22dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+
+                    android:weightSum="4">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/anystarselect"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/starselect"
+                        >
+
+
+
+                        <TextView
+                            android:id="@+id/any"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+
+                            android:text="Any"
+                            android:textColor="@color/blackcolorview"
+                            android:textSize="20dp"/>
+
+
+                        <RatingBar
+                            android:id="@+id/anyitem_ratingBar"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/subtitle"
+                            android:stepSize=".5"
+                            android:isIndicator="true"
+                            android:numStars="2"
+                            android:rating="2"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="@dimen/spacing_medium"></RatingBar>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/twostarselect"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/starselect"
+                        >
+
+                        <TextView
+                            android:id="@+id/twostar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/blackcolorview"
+                            android:text="2 stars"
+                            android:textSize="20dp"/>
+
+                        <RatingBar
+                            android:id="@+id/twoitem_ratingBar"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/subtitle"
+                            android:stepSize=".5"
+                            android:isIndicator="true"
+                            android:numStars="2"
+                            android:rating="2"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="@dimen/spacing_medium"></RatingBar>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/threestarselect"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/starselect"
+                        >
+
+                        <TextView
+                            android:id="@+id/threestar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/blackcolorview"
+                            android:text="3 stars"
+                            android:textSize="20dp"/>
+
+                        <RatingBar
+                            android:id="@+id/threeitem_ratingBar"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/subtitle"
+                            android:stepSize=".5"
+                            android:isIndicator="true"
+                            android:numStars="3"
+                            android:rating="3"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="@dimen/spacing_medium"></RatingBar>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fourthstar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/starselect"
+                        >
+
+                        <TextView
+                            android:id="@+id/fourstar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/blackcolorview"
+                            android:text="4 stars"
+                            android:textSize="20dp"/>
+
+                        <RatingBar
+                            android:id="@+id/fouritem_ratingBar"
+
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/subtitle"
+                            android:stepSize=".5"
+                            android:isIndicator="true"
+                            android:numStars="4"
+                            android:rating="4"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="@dimen/spacing_medium"></RatingBar>
+
+
+
+                    </LinearLayout>
+
+
+                    <!--   style="@style/dialogMediaRationBar"-->
+
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/nv"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d3ccc2"
+                    android:paddingBottom="5dp"></View>
+
+
+
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Neighbourhoods"
+                        android:textSize="22dp"/>
+
+                <LinearLayout
+                    android:id="@+id/allneighbourhoods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blackcolorview"
+                        android:text="All Neighbourhoods"
+                        android:textSize="19dp"
+
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="20dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/nvs"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d3ccc2"
+                    android:paddingBottom="5dp"></View>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Categories"
+                    android:textSize="22dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="4.5"
+                        android:textColor="@color/blackcolorview"
+                        android:text="Amusement Parks"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:theme="@style/checkBoxStyle"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="4.5"
+                        android:textColor="@color/blackcolorview"
+                        android:text="Landmark"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:theme="@style/checkBoxStyle"
+                        />
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="4.5"
+                        android:textColor="@color/blackcolorview"
+                        android:text="Museums"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:theme="@style/checkBoxStyle"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="4.5"
+                        android:textColor="@color/blackcolorview"
+                        android:text="Nature &amp; Parks"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:theme="@style/checkBoxStyle"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="4.5"
+                        android:textColor="@color/blackcolorview"
+                        android:text="Outdoor Activities"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:theme="@style/checkBoxStyle"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="4.5"
+                        android:textColor="@color/blackcolorview"
+                        android:text="Sights &amp; Landmarks"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:theme="@style/checkBoxStyle"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="4.5"
+                        android:textColor="@color/blackcolorview"
+                        android:text="Shopping"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:theme="@style/checkBoxStyle"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="4.5"
+                        android:textColor="@color/blackcolorview"
+                        android:text="Traveller Resources"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:theme="@style/checkBoxStyle"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="4.5"
+                        android:textColor="@color/blackcolorview"
+                        android:text="Transportation"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:theme="@style/checkBoxStyle"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="4.5"
+                        android:textColor="@color/blackcolorview"
+                        android:text="Theatre &amp; Concerts"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:theme="@style/checkBoxStyle"
+                        />
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="4.5"
+                        android:textColor="@color/blackcolorview"
+                        android:text="Zoos &amp; Aquariums"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:theme="@style/checkBoxStyle"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:weightSum="5"
+                    >
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="4.5"
+                        android:textColor="@color/blackcolorview"
+                        android:text="Others"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:theme="@style/checkBoxStyle"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                <View
+                    android:id="@+id/nv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d3ccc2"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"></View>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

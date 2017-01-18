@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/jeyavijay/Development/HNewpart1/26filterfix_comingrelease/NewUiHHWT/Android/Code/TravelPlanner/Materialtimepicker/build/intermediates/res/merged/release/color/mdtp_done_text_color_dark.xml",
+        "source": "/Users/jeyavijay/Development/HNewpart1/26filterfix_comingrelease/NewUiHHWT/Android/Code/TravelPlanner/Materialtimepicker/src/main/res/color/mdtp_done_text_color_dark.xml"
+    },
+    {
+        "merged": "/Users/jeyavijay/Development/HNewpart1/26filterfix_comingrelease/NewUiHHWT/Android/Code/TravelPlanner/Materialtimepicker/build/intermediates/res/merged/release/color/mdtp_date_picker_year_selector.xml",
+        "source": "/Users/jeyavijay/Development/HNewpart1/26filterfix_comingrelease/NewUiHHWT/Android/Code/TravelPlanner/Materialtimepicker/src/main/res/color/mdtp_date_picker_year_selector.xml"
+    },
+    {
+        "merged": "/Users/jeyavijay/Development/HNewpart1/26filterfix_comingrelease/NewUiHHWT/Android/Code/TravelPlanner/Materialtimepicker/build/intermediates/res/merged/release/color/mdtp_date_picker_selector.xml",
+        "source": "/Users/jeyavijay/Development/HNewpart1/26filterfix_comingrelease/NewUiHHWT/Android/Code/TravelPlanner/Materialtimepicker/src/main/res/color/mdtp_date_picker_selector.xml"
+    },
+    {
+        "merged": "/Users/jeyavijay/Development/HNewpart1/26filterfix_comingrelease/NewUiHHWT/Android/Code/TravelPlanner/Materialtimepicker/build/intermediates/res/merged/release/color/mdtp_done_text_color.xml",
+        "source": "/Users/jeyavijay/Development/HNewpart1/26filterfix_comingrelease/NewUiHHWT/Android/Code/TravelPlanner/Materialtimepicker/src/main/res/color/mdtp_done_text_color.xml"
+    }
+]

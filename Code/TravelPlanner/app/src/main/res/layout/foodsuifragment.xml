@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/onetopcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fitsSystemWindows="true"
+        app:cardBackgroundColor="#ffffff"
+
+        app:cardCornerRadius="3dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardUseCompatPadding="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_xsmall"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:id="@+id/linearlay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="45"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.hhwt.travelplanner.widgets.SquareImageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/newuioneimg" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="55"
+
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:text="Bukchon Hanok Village"
+
+                        android:fontFamily="sans-serif-medium"
+
+                        android:textAppearance="?android:textAppearanceMedium"
+
+                        android:textSize="19dp"
+                        android:textColor="@color/blackcolorview"
+                        />
+
+
+
+
+
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:id="@+id/subtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title"
+                        android:background="@android:color/transparent"
+                        android:maxLines="2"
+                        android:text="Sights &amp; Landmarks"
+                        android:textSize="16dp"
+
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@color/blackcolorview"
+                        app:typeface="robotoRegular" />
+
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/item_ratingBars"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subtitle"
+android:gravity="center"
+                        android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/thingstodofirstfloat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="5"
+                        android:layout_marginRight="8dp"
+                        android:textSize="17dp"/>
+
+
+
+
+
+
+
+                    <RatingBar
+                        android:id="@+id/item_ratingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/spacing_medium"
+                        android:isIndicator="true"
+                        android:stepSize="0.5"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/spacing_medium"></RatingBar>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/item_ratingBars"
+                        android:background="@android:color/transparent"
+                        android:maxLines="2"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif"
+                        android:text="10 nearby food places \n 1 prayer space nearby"
+                        android:textAppearance="?android:textAppearanceSmall"
+
+                        app:typeface="robotoRegular" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/txt_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:hapticFeedbackEnabled="true"
+                    android:paddingLeft="10dp"
+                    android:text="Deleted"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/txt_undo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="Undo"
+                    android:textColor="@color/cpb_blue_dark" />
+
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+
+   <!-- <LinearLayout
+        android:id="@+id/specialdeals"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/onetopcard"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:background="@drawable/specialdbg"
+        >
+
+        <TextView
+            android:id="@+id/ddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Special Deals Available"
+            android:textSize="19dp"
+            android:gravity="center"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+
+            android:layout_marginRight="10dp"
+            android:textColor="@color/neuiblueclor"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rightarrow"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:tint="@color/neuiblueclor"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/twotopcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fitsSystemWindows="true"
+        android:layout_below="@+id/onetopcard"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardUseCompatPadding="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_xsmall"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:id="@+id/linearlaytwo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="45"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.hhwt.travelplanner.widgets.SquareImageView
+                        android:id="@+id/imagetwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/newuitwoimg" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="55"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:id="@+id/titletwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:text="Ihwa Mural Village"
+
+
+                        android:textAppearance="?android:textAppearanceMedium"
+
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="19dp"
+                        android:textColor="@color/blackcolorview"
+
+                        />
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:id="@+id/subtitletwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titletwo"
+                        android:background="@android:color/transparent"
+                        android:maxLines="2"
+                        android:text="Sights &amp; Landmarks"
+                        android:textSize="16dp"
+
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@color/blackcolorview"
+                        app:typeface="robotoRegular" />
+
+
+
+                    <LinearLayout
+                        android:id="@+id/item_ratingBarstwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+android:gravity="center"
+                        android:layout_below="@+id/subtitletwo"
+                        android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/thingstodosecondfloat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="5"
+                        android:layout_marginRight="8dp"
+                        android:textSize="17dp"/>
+
+                    <RatingBar
+                        android:id="@+id/item_ratingBartwo"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subtitletwo"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/spacing_medium"
+
+
+
+                        android:stepSize="0.5"
+
+                        android:isIndicator="true"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/spacing_medium"></RatingBar>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:id="@+id/addresstwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/item_ratingBarstwo"
+                        android:background="@android:color/transparent"
+                        android:maxLines="2"
+                        android:text="10 nearby food places \n No prayer space nearby"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="5dp"
+                        app:typeface="robotoRegular" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/txt_deletetwo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:hapticFeedbackEnabled="true"
+                    android:paddingLeft="10dp"
+                    android:text="Deleted"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/txt_undotwo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="Undo"
+                    android:textColor="@color/cpb_blue_dark" />
+
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/thirdtopcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fitsSystemWindows="true"
+        android:layout_below="@+id/twotopcard"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardUseCompatPadding="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_xsmall"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:id="@+id/linearlaythree"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="45"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.hhwt.travelplanner.widgets.SquareImageView
+                        android:id="@+id/imagethree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/newuithirdimg" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="55"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:id="@+id/titlethree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:text="Seoul Forest"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="19dp"
+                        android:textColor="@color/blackcolorview"
+
+                        />
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:id="@+id/subtitlethree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titlethree"
+                        android:background="@android:color/transparent"
+                        android:maxLines="2"
+                        android:text="Nature"
+                        android:textSize="16dp"
+
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@color/blackcolorview"
+                        app:typeface="robotoRegular" />
+
+
+                    <LinearLayout
+                        android:id="@+id/item_ratingBarsthree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+android:gravity="center"
+                        android:layout_below="@+id/subtitlethree"
+                        android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/thingstodothirdfloat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="8"
+                        android:layout_marginRight="8dp"
+                        android:textSize="17dp"/>
+
+                    <RatingBar
+                        android:id="@+id/item_ratingBarthree"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subtitlethree"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/spacing_medium"
+
+                        android:isIndicator="true"
+                        android:gravity="center_vertical"
+
+                        android:stepSize="0.5"
+
+                        android:paddingBottom="@dimen/spacing_medium"></RatingBar>
+
+                      <!--  style="@style/dialogMediaRationBar"-->
+
+</LinearLayout>
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:id="@+id/addressthree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/item_ratingBarsthree"
+                        android:background="@android:color/transparent"
+                        android:maxLines="2"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="10 nearby food places \n No prayer space nearby"
+                        app:typeface="robotoRegular" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/txt_deletethree"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:hapticFeedbackEnabled="true"
+                    android:paddingLeft="10dp"
+                    android:text="Deleted"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/txt_undothree"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="Undo"
+                    android:textColor="@color/cpb_blue_dark" />
+
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/thirdtopcard"
+        android:background="#ffffff"
+        android:gravity="top"
+        android:layout_gravity="center">
+        <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/planyourtour"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Explore all"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#00cccb"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+
+
+    <!--    <android.support.v7.widget.RecyclerView
+            android:id="@+id/categoryitems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentBottom="true" />-->
+
+
+</RelativeLayout>

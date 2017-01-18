@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/planyourtour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plan your perfect holiday"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/main_color_grey_500"
+            />
+
+        <TextView
+            android:id="@+id/daytour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4a01c"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/planyourtour"
+            android:text="try our trip planner now!"
+            android:textStyle="bold"
+android:textAllCaps="true"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#fff"
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/footer"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBackground"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <com.hhwt.travelplanner.widgets.RectImageView
+            android:id="@+id/bigpage"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/_add_activities"
+
+            android:scaleType="fitXY" />
+
+       <!-- <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/cityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/mdtp_transparent_black"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:text="@string/locale"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/white"
+            app:typeface="robotoBold" />-->
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#fff"
+        android:weightSum="4">
+
+
+        <TextView
+            android:id="@+id/anntitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Annyeong-haseyo!"
+            android:textSize="22dp"
+
+            android:textColor="@color/blackcolorview"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginRight="10dp"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/anncontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you're still thinking whether or not to take the plunge and visit the 'Seoul' of kimchi-land,we're here to convince you. From trying halal korean food to exploring the artsy corners of Seoul, we're pretty sure there's something for everyone!"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/blackcolorview"
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/discoverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Discover"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/closeopenview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/downui"
+             android:tint="@color/newuigray"
+                />
+
+
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/custom_tab_layout_height"
+                        app:tabMode="fixed"
+
+                        app:tabIndicatorColor="#00cccb"
+                        android:elevation="3dp"
+                        app:tabGravity="fill"
+                        android:background="@color/white"
+                        app:tabIndicatorHeight="3dp"
+
+
+                        />
+                </android.support.design.widget.AppBarLayout>
+
+              <!--  <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"  />-->
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpagers"
+                    android:layout_width="match_parent"
+                    android:layout_height="720dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+            </android.support.design.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+    </RelativeLayout>

@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBackground"
+    android:orientation="vertical"
+    android:weightSum="1"
+
+    tools:context="com.hhwt.travelplanner.activity.FriendsFragment">
+
+    <RelativeLayout
+        android:id="@+id/mytrip"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_weight=".8"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:weightSum="1"> <!-- activity_screen_slide.xml -->
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/activity_wizard_possition" />
+
+
+        <com.hhwt.travelplanner.widgets.font.MaterialDesignIconsTextView
+            android:id="@+id/activity_wizard_possition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/guide"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_weight=".2"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!-- Session photo -->
+
+        <com.hhwt.travelplanner.widgets.MaterialRippleLayout
+            style="@style/RippleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:focusable="false"
+            app:rippleColors="@color/main_color_grey_400">
+
+            <RelativeLayout
+                android:id="@+id/selectdestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tripcolor"
+                android:minWidth="180dp"
+                android:paddingBottom="@dimen/spacing_medium"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/spacing_medium">
+
+                <ImageView
+                    android:id="@+id/locicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location_48" />
+
+                <View
+                    android:id="@+id/locv"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/locicon"
+                    android:layout_alignTop="@+id/locicon"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/locicon"
+                    android:background="@color/white"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"></View>
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/locv"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/set_destination"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/white"
+                    app:typeface="robotoBold" />
+            </RelativeLayout>
+        </com.hhwt.travelplanner.widgets.MaterialRippleLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

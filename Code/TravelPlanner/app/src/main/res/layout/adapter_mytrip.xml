@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (C) 2015 Antonio Leiva
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:clickable="true"
+    card_view:cardBackgroundColor="@color/mytripitembackground"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transperent_15_percent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/top_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textviewblueline"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:gravity="center_horizontal|left"
+                android:maxLines="2"
+                android:paddingBottom="@dimen/spacing_medium"
+                android:paddingLeft="@dimen/spacing_medium"
+                android:paddingRight="@dimen/spacing_medium"
+                android:paddingTop="@dimen/spacing_medium"
+                android:text="@string/_add_activities"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/bluebutton"
+                app:typeface="robotoBold" />
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="center_horizontal|center_vertical"
+                android:maxLines="2"
+                android:src="@android:drawable/ic_menu_delete"
+                android:tint="#4d545e" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_header"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+           <!-- <ImageView
+                android:id="@+id/cityimg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".3"
+                android:src="@drawable/app_name" />-->
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="45"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.hhwt.travelplanner.widgets.SquareImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/big_144" />
+
+            </LinearLayout>
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="55">
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/hstartdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:paddingTop="@dimen/spacing_medium"
+                    android:text="Start Date:       "
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/bluebutton"
+                    app:typeface="robotoLight" />
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/tstartdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/hstartdate"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:paddingTop="@dimen/spacing_medium"
+                    android:text="@string/_add_activities"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/bluebutton"
+                    app:typeface="robotoLight" />
+
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/henddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hstartdate"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:text="End Date:   "
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/bluebutton"
+                    app:typeface="robotoLight" />
+
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/tenddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tstartdate"
+                    android:layout_below="@+id/hstartdate"
+                    android:layout_toRightOf="@+id/henddate"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:text="@string/_add_activities"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/bluebutton"
+                    app:typeface="robotoLight" />
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/hplace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/henddate"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:text="Place:         "
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/bluebutton"
+                    app:typeface="robotoLight" />
+
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/tplace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tstartdate"
+                    android:layout_below="@+id/henddate"
+                    android:layout_toRightOf="@+id/hplace"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:text="@string/_add_activities"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/bluebutton"
+                    app:typeface="robotoLight" />
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/hcreatedon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hplace"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:text="Created On:         "
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/bluebutton"
+                    app:typeface="robotoLight" />
+
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/tcreatedon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tstartdate"
+                    android:layout_below="@+id/tplace"
+                    android:layout_toRightOf="@+id/hcreatedon"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:text="@string/_add_activities"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/bluebutton"
+                    app:typeface="robotoLight" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

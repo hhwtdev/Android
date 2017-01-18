@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/neuiblueclor"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+       >
+
+
+        <ImageView
+            android:id="@+id/backlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:src="@drawable/backarrow"
+            android:tint="@color/white" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/apptitlelogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Forgot Password"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#d3ccc2"
+        android:padding="5dp"
+        android:layout_marginBottom="20dp"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+
+
+        <com.hhwt.travelplanner.widgets.font.RobotoEditText
+            android:textAppearance="?android:textAppearanceMedium"
+            android:focusableInTouchMode="true"
+            app:typeface="robotoRegular"
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <View
+            android:id="@+id/nv1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d3ccc2"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="5dp"></View>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+        android:id="@+id/resetpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/newlogincurvelight"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:text="Reset Password"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+
+        />
+
+
+
+
+    </LinearLayout>

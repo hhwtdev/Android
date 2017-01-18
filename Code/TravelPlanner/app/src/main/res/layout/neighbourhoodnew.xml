@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/parentview"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            >
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"
+
+
+                android:gravity="center"
+                android:textColor="@color/neuiblueclor"
+                />
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:layout_weight="1"
+
+
+                android:textColor="@color/neuiblueclor"
+                />
+
+
+            <TextView
+                android:id="@+id/neighbourapplyfilter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:layout_weight="2"
+
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/neuiblueclor"
+                />
+        </LinearLayout>
+        <View
+            android:id="@+id/nvs"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d3ccc2"
+            android:paddingBottom="5dp"></View>
+    </RelativeLayout>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_above="@+id/footer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:weightSum="5"
+                        >
+                        <TextView
+                            android:id="@+id/textViewall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="4.5"
+                            android:textColor="@color/blackcolorview"
+                            android:text="All Neighbourhoods"
+                            android:textSize="19dp"
+                            android:layout_marginLeft="5dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:theme="@style/checkBoxStyle"
+                            />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/nvs1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d3ccc2"
+                        android:paddingBottom="5dp"></View>
+
+
+
+
+
+                    <ListView
+                        android:id="@+id/lvMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                         >
+                    </ListView>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

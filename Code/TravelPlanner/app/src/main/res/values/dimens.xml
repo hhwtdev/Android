@@ -1,0 +1,60 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="nav_drawer_width">260dp</dimen>
+
+
+    <dimen name="cpb_stroke_width">4dp</dimen>
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="fab_shadow_size">12dp</dimen>
+
+    <dimen name="fab_scroll_threshold">4dp</dimen>
+    <dimen name="fab_elevation_lollipop">8dp</dimen>
+    <dimen name="fab_press_translation_z">6dp</dimen>
+
+
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_middle">10dp</dimen>
+    <dimen name="padding_large">15dp</dimen>
+
+    <dimen name="logo_maxwidth">320dp</dimen>
+
+    <dimen name="text_size_small">15sp</dimen>
+    <dimen name="text_size_middle">18sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_medium">8dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="keyline_1">16dp</dimen>
+    <dimen name="keyline_1_minus_8dp">8dp</dimen>
+    <dimen name="keyline_2">72dp</dimen>
+    <dimen name="keyline_2_minus_16dp">56dp</dimen>
+    <dimen name="keyline_2_session_detail">@dimen/keyline_2</dimen>
+
+    <dimen name="activity_horizontal_mediummargin">10dp</dimen>
+    <dimen name="activity_marginTop">35dp</dimen>
+    <dimen name="activity_vertical_mediummargin">10dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="textview_l">25sp</dimen>
+    <dimen name="textview_xl">30sp</dimen>
+    <dimen name="textview_xxl">35sp</dimen>
+    <dimen name="textview_m">20sp</dimen>
+    <dimen name="textview_s">15sp</dimen>
+    <dimen name="textview_xs">10sp</dimen>
+    <dimen name="textview_xxs">5sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+
+</resources>

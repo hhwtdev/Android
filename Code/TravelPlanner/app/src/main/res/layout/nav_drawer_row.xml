@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/selector"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:padding="10dp">
+
+
+    <!-- Session photo -->
+    <ImageView
+        android:id="@+id/nav_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:src="@drawable/explore_96" />
+
+    <TextView
+        android:id="@+id/nav_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/nav_image"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:minLines="2"
+        android:padding="10dp"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

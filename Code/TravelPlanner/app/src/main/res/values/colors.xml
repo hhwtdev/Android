@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#386b61</color>
+    <color name="colorPrimaryDark">#264a43</color>
+    <color name="colorAccent">#2B6390</color>
+    <color name="colorSecondary">#CDAD00</color>
+    <color name="colorPrimarytrans">@color/rippleColor</color>
+    <color name="layoutBackground">#f6f6f6</color>
+    <color name="tripcolor">#CDAD00</color>
+    <color name="bluebutton">#2B6390</color>
+    <color name="mytripitembackground">#A69E9E</color>
+    <color name="white">#ffffff</color>
+    <color name="feedtypecolor">#45746c</color>
+    <color name="profiletext">#386b62</color>
+    <color name="secomenubg">#fdf8f2</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="psts_background_tab_pressed">#1AFFFFFF</color>
+    <color name="psts_background_tab_pressed_ripple">#AAFFFFFF</color>
+    <color name="semitransperent">#80000000</color>
+    <color name="transperent_15_percent">#26000000</color>
+
+    <color name="profileditpic">#e7e0d7</color>
+    <color name="input_register_hint">#f6f7f7</color>
+
+
+    <color name="neuiblueclor">#00cccb</color>
+
+
+<color name="orangeindicatore">#f4a01c</color>
+    <!--00cccb-->
+
+
+
+
+    <color name="viewcolor">#d3ccc2</color>
+
+    <color name="viewcolorgreen">#44DB5E</color>
+
+
+    <color name="lightgray">#D3D3D3</color>
+
+    <color name="pureblack">#000000</color>
+    <color name="bgfeedback">#fdf8f2</color>
+    <color name="white_15_percent">#26ffffff</color>
+    <color name="white_30_percent">#4Dffffff</color>
+    <color name="bgyellow">#e8b903</color>
+
+
+
+
+    <color name="bgorangeui">#f4a01c</color>
+
+
+
+    <color name="white_50_percent">#80ffffff</color>
+    <color name="main_color_500">@color/material_purple_500</color>
+    <color name="main_color_50">@color/material_purple_50</color>
+    <color name="main_color_100">@color/material_purple_100</color>
+    <color name="main_color_200">@color/material_purple_200</color>
+    <color name="main_color_300">@color/material_purple_300</color>
+    <color name="main_color_400">@color/material_purple_400</color>
+    <color name="main_color_600">@color/material_purple_600</color>
+    <color name="main_color_700">@color/material_purple_700</color>
+    <color name="main_color_800">@color/material_purple_800</color>
+    <color name="main_color_900">@color/material_purple_900</color>
+    <color name="main_color_A100">@color/material_light_yellow_A100</color>
+    <color name="main_color_A200">@color/material_light_yellow_A200</color>
+    <color name="main_color_A400">@color/material_light_yellow_A400</color>
+
+
+    <color name="drakgreen">#11594E</color>
+    <color name="blackcolorview">#000000</color>
+    <color name="seconpluscolor">#d20b0d</color>
+    <color name="orangedrak">#e86e02</color>
+
+    <color name="orangeplus">#f29f31</color>
+    <color name="bcdateguest">#efedee</color>
+    <!--<color name="newuigray">#ff212121</color>-->
+
+
+    <color name="newuigray">#7f7f7f</color>
+
+    <color name="main_color_grey_500">@color/material_grey_500</color>
+    <color name="main_color_grey_50">@color/material_grey_50</color>
+    <color name="main_color_grey_100">@color/material_grey_100</color>
+    <color name="main_color_grey_200">@color/material_grey_200</color>
+    <color name="main_color_grey_300">@color/material_grey_300</color>
+    <color name="main_color_grey_400">@color/material_grey_400</color>
+    <color name="main_color_grey_600">@color/material_grey_600</color>
+    <color name="main_color_grey_700">@color/material_grey_700</color>
+    <color name="main_color_grey_800">@color/material_grey_800</color>
+    <color name="main_color_grey_900">@color/material_grey_900</color>
+
+
+    <color name="cpb_grey">#607D8B</color>
+    <color name="cpb_blue">#ff0099cc</color>
+    <color name="cpb_blue_dark">#ff00719b</color>
+    <color name="cpb_red">#ffff4444</color>
+    <color name="cpb_red_dark">#ffcd3a3a</color>
+    <color name="cpb_green">#ff99cc00</color>
+    <color name="cpb_green_dark">#ff6d9b00</color>
+    <color name="cpb_white">@android:color/white</color>
+    <color name="rippleColor">@color/material_light_green_800</color>
+</resources>

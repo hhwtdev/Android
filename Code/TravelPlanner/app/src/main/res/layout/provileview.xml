@@ -1,0 +1,470 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgfeedback">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgfeedback"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/viewA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:background="@color/profileditpic"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/appicon"
+
+                app:border_color="#FF000000" />
+
+            <com.hhwt.travelplanner.widgets.SquareImageView
+                android:id="@+id/guimagelist"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@android:color/white"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/appicon" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+               >
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/proname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Martha Stuart"
+                android:textColor="@color/profiletext"
+                android:textSize="20sp" />
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/editname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:text="Edit"
+                    android:textColor="@color/cpb_blue_dark"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/logoutbufb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="15dp"
+
+                    android:text="Logout"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_bg_rounded_corners"
+                    android:textColor="@color/cpb_blue_dark"
+                    android:textSize="20sp" />
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewB"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_weight="0.4"
+            android:background="@color/bgfeedback"
+            android:orientation="vertical">
+
+           <!-- <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name: "
+                android:textColor="@color/profiletext"
+                android:textSize="22sp" />
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/profilefirstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/fname"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/fname"
+                android:text="first name"
+                android:textColor="@color/profiletext"
+                android:textSize="22sp" />
+-->
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:id="@+id/ea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:background="@color/bgfeedback"
+        >
+
+
+
+    <TextView
+                    android:id="@+id/eemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email Address"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/blackcolorview"
+                    />
+
+                <TextView
+                    android:id="@+id/emailadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text=""
+                    android:hint="emailaddress"
+
+                    android:textColor="@color/blackcolorview"
+                    android:textSize="16dp"
+                    android:textStyle="normal"
+                    />
+
+
+
+
+            <View
+                android:id="@+id/v"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/eemail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#d3ccc2" />
+
+
+
+
+</LinearLayout>
+            <LinearLayout
+                android:id="@+id/pa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:background="@color/bgfeedback"
+                >
+
+
+
+
+                <TextView
+                    android:id="@+id/ppassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password "
+                    android:textSize="25dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableRight="@drawable/rightarrow"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/blackcolorview"
+                    />
+
+                <TextView
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text=""
+                    android:hint="password"
+
+                    android:textColor="@color/blackcolorview"
+                    android:textSize="16dp"
+                    android:textStyle="normal"
+                    />
+
+
+
+
+                <View
+                    android:id="@+id/vp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/pa"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#d3ccc2" />
+            </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/da"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:background="@color/bgfeedback"
+            >
+
+
+
+
+            <TextView
+                android:id="@+id/ddate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth "
+                android:textSize="25dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:drawableRight="@drawable/rightarrow"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/blackcolorview"
+                />
+
+            <TextView
+                android:id="@+id/dateofbirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text=""
+                android:hint="Date of Birth"
+
+                android:textColor="@color/blackcolorview"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                />
+
+
+
+
+            <View
+                android:id="@+id/vd"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/da"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#d3ccc2" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:background="@color/bgfeedback"
+            >
+
+
+
+
+            <TextView
+                android:id="@+id/pphon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:drawableRight="@drawable/rightarrow"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/blackcolorview"
+                />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text=""
+                android:hint="Phone Number"
+
+                android:textColor="@color/blackcolorview"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                />
+
+
+
+
+            <View
+                android:id="@+id/vph"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/ph"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#d3ccc2" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/co"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:background="@color/bgfeedback"
+            >
+
+
+
+
+            <TextView
+                android:id="@+id/cco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:textSize="25dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:drawableRight="@drawable/rightarrow"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/blackcolorview"
+                />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text=""
+                android:hint="Country"
+
+                android:textColor="@color/blackcolorview"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                />
+
+
+
+
+            <View
+                android:id="@+id/vc"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/co"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#d3ccc2" />
+        </LinearLayout>
+
+
+        <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/privatepolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Issues with your login? Contact us at hello@havehalalwilltravel.com"
+            android:textAppearance="?android:textAppearance"
+            android:layout_margin="30dp"
+            android:autoLink = "email"
+            android:gravity="center"
+            android:textSize="13dp"
+            app:typeface="robotoBlack" />
+
+    </LinearLayout>
+
+
+
+
+        <!--    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/lname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v"
+                android:text="Last Name: "
+                android:textColor="@color/profiletext"
+                android:textSize="22sp" />
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/profillastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/lname"
+                android:layout_below="@+id/v"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/lname"
+                android:text="last name"
+                android:textColor="@color/profiletext"
+                android:textSize="22sp" />
+-->
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/cpb_stroke_width"
+            android:paddingRight="@dimen/cpb_stroke_width"
+            android:paddingTop="@dimen/cpb_stroke_width">
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_mediummargin"
+                android:text="Star filter"
+
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/colorPrimary"
+                app:typeface="robotoRegular" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/starbase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_mediummargin" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/cpb_stroke_width"
+            android:paddingRight="@dimen/cpb_stroke_width"
+            android:paddingTop="@dimen/cpb_stroke_width">
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_mediummargin"
+                android:text="Type filter"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/colorPrimary"
+                app:typeface="robotoRegular" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/typeface"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_mediummargin" />
+        </LinearLayout>
+
+
+        <com.hhwt.travelplanner.widgets.MaterialRippleLayout
+            style="@style/RippleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/middle"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/text_size_small"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:focusable="false"
+
+            app:rippleColors="@color/rippleColor">
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/saveclick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:minWidth="150dip"
+                android:padding="@dimen/spacing_medium"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/white"
+                app:typeface="robotoBold" />
+
+        </com.hhwt.travelplanner.widgets.MaterialRippleLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

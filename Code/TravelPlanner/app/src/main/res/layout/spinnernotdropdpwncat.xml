@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluebutton"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <com.hhwt.travelplanner.widgets.MaterialRippleLayout
+        style="@style/RippleStyle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_weight=".8"
+
+        android:clickable="false"
+        android:focusable="false"
+        app:rippleColors="@color/main_color_grey_400">
+
+        <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@android:id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:clickable="false"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/mdtp_date_picker_header_text_size"
+            android:paddingLeft="@dimen/mdtp_date_picker_header_text_size"
+            android:paddingRight="@dimen/mdtp_date_picker_header_text_size"
+            android:paddingTop="@dimen/mdtp_date_picker_header_text_size"
+            android:singleLine="true"
+            android:text="@string/discover"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/white"
+            app:typeface="robotoBold" />
+    </com.hhwt.travelplanner.widgets.MaterialRippleLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_weight=".2"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/spinner_triangle"
+            android:tint="@android:color/white" />
+    </RelativeLayout>
+</LinearLayout>

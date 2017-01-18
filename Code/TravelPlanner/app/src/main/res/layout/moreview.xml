@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Profile"
+    android:textSize="20dp"
+
+    android:layout_marginLeft="20dp"
+    android:fontFamily="sans-serif-medium"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="15dp"
+
+
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:id="@+id/profileclick"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:orientation="horizontal"
+       >
+
+        <com.hhwt.travelplanner.widgets.SquareImageView
+            android:id="@+id/guimagelist"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/white"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/appicon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="55"
+            android:orientation="vertical"
+
+            android:paddingLeft="10dp">
+
+
+            <TextView
+                android:id="@+id/namelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@android:color/transparent"
+                android:maxLines="2"
+                android:paddingBottom="@dimen/spacing_medium"
+                android:fontFamily="sans-serif"
+                android:text="Melvin Goh"
+                android:paddingTop="@dimen/spacing_medium"
+       android:textSize="20dp"
+                android:textColor="@color/blackcolorview"
+                 />
+
+            <TextView
+                android:id="@+id/activitylist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="40dp"
+                android:background="@android:color/transparent"
+                android:text="View your profile"
+
+                android:paddingBottom="@dimen/spacing_medium"
+               android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/semitransperent"
+                 />
+
+
+        </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:id="@+id/vp"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#d3ccc2" />
+
+        </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Community"
+        android:textSize="20dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-medium"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/addnewpla"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addnewplacefab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/addnewplace"
+            android:tint="#fff"
+            app:backgroundTint="@color/neuiblueclor" />
+
+
+        <TextView
+            android:id="@+id/addanewplace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Add a new place"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/blackcolorview"
+            />
+
+
+        </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/addreviewss"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addnewreviewsfab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/editprofilepicture"
+            android:tint="#fff"
+            app:backgroundTint="#f4a01c" />
+
+
+        <TextView
+            android:id="@+id/addnewreviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Add a review"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/blackcolorview"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vp2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#d3ccc2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Others"
+        android:textSize="20dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/feedbackmore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Provide app feedback"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/blackcolorview"
+        />
+    <TextView
+        android:id="@+id/reportabug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Report a bug"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/blackcolorview"
+        />
+
+    <View
+        android:id="@+id/vp3"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#d3ccc2"
+        android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</ScrollView>

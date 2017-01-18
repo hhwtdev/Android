@@ -1,0 +1,318 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+
+
+
+
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/container_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+  >
+<!--    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/newsplashpicture"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+
+        />-->
+
+
+
+        <com.hhwt.travelplanner.widgets.SquareImageView
+            android:id="@+id/guimagelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+
+            android:layout_marginBottom="100dp"
+
+            android:src="@drawable/spimg" />
+
+
+   <!--     android:src="@drawable/newsplashpicture"-->
+
+        <LinearLayout
+            android:id="@+id/main_ui_container"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:gravity="bottom"
+
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+
+           >
+
+           <!-- <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                >
+                &lt;!&ndash;<Button
+                    android:id="@+id/loginandregister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Login / Register"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textSize="16sp"
+                    android:background="@color/drakgreen"
+                    />&ndash;&gt;
+
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/greeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#333"
+                    android:textSize="18sp" />
+
+               <!-- <com.facebook.login.widget.ProfilePictureView
+                    android:id="@+id/profilePicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_horizontal"
+                    facebook:com_facebook_preset_size="normal" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+android:layout_gravity="bottom"
+
+                android:weightSum="1"
+               >
+
+                <!--
+                            <com.hhwt.travelplanner.widgets.MaterialRippleLayout
+                                style="@style/RippleStyle"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_alignLeft="@+id/loginbutton"
+                                android:layout_alignRight="@+id/loginbutton"
+                                android:layout_gravity="center"
+
+                                android:layout_marginBottom="@dimen/text_size_small"
+
+                                android:focusable="false"
+                                facebook:rippleColors="@color/main_color_A100">
+
+                                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                                    android:id="@+id/loginandregister"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@color/tripcolor"
+                                    android:gravity="center"
+                                    android:padding="@dimen/
+                                    spacing_medium"
+                                    android:text="Login / Register"
+                                    android:textAllCaps="false"
+                                    android:textAppearance="?android:textAppearance"
+                                    android:textColor="@color/white"
+                                    facebook:typeface="robotoBold" />
+
+                            </com.hhwt.travelplanner.widgets.Materi-->a_display" />-->
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="40dp"
+                       >
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/loginbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/activity_horizontal_margin"
+                        facebook:com_facebook_confirm_logout="false"
+                        facebook:com_facebook_tooltip_mode="never_display"
+                        android:layout_weight="0.30" />
+
+
+                </LinearLayout>
+
+               <!-- android:background="#435EAB"-->
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+android:layout_marginTop="20dp"
+
+                    android:layout_gravity="center"
+                    android:weightSum="5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="150dp"
+                        android:layout_height="1dp"
+                        android:background="#d3ccc2"
+
+
+                        android:gravity="center"></View>
+
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Or"
+                        android:gravity="center"
+android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+
+
+                       />
+
+                    <View
+                        android:layout_width="150dp"
+                        android:layout_height="1dp"
+                        android:background="#d3ccc2"
+                        android:gravity="center"
+                      ></View>
+
+                </LinearLayout>
+
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+android:id="@+id/singup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up With Email"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/neuiblueclor"
+                    android:fontFamily="sans-serif"
+
+                    >
+
+                    </com.hhwt.travelplanner.widgets.font.RobotoTextView>
+
+
+
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/privatepolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="By registering you agree to our "
+                    android:textAppearance="?android:textAppearance"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="#808080"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#d3ccc2"
+                    android:padding="5dp"
+                    android:layout_marginBottom="20dp"
+                    ></View>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+
+
+    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center">
+        </com.hhwt.travelplanner.widgets.font.RobotoTextView>
+
+    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+        android:id="@+id/loginandregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="center"
+        android:textColor="@color/neuiblueclor">
+    </com.hhwt.travelplanner.widgets.font.RobotoTextView>
+
+
+
+</LinearLayout>
+<!--
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/loginandregister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/tripcolor"
+                    android:gravity="center"
+                    android:text="Login / Register"
+                    android:textAllCaps="false"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="25dp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    facebook:typeface="robotoBold" />
+-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

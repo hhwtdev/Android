@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/parentview"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            >
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"
+
+
+                android:gravity="center"
+                android:textColor="@color/neuiblueclor"
+                />
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:layout_weight="1"
+
+
+                android:textColor="@color/neuiblueclor"
+                />
+
+
+            <TextView
+                android:id="@+id/sugestlist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SUGGEST EDITS"
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:layout_weight="2"
+
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                />
+
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:background="@color/white">
+
+
+
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="14dp"
+                android:background="@color/white"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+
+                    android:layout_marginBottom="20dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:weightSum="4"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangles">
+
+                            <ImageView
+                                android:id="@+id/guimagelist"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+
+                                android:src="@drawable/addpic"
+                                />
+
+
+                            <!--   android:tint="@color/newuigray"-->
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            >
+
+                            <ImageView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+
+
+                                android:tint="@color/newuigray"/>
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            >
+
+                            <ImageView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+
+
+                                android:tint="@color/newuigray"/>
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            >
+
+                            <ImageView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+
+
+                                android:tint="@color/newuigray"/>
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            <!--    <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                    android:id="@+id/nature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="What is the name  of this place?"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:focusableInTouchMode="true"
+                    android:background="@android:color/transparent"
+                    app:typeface="robotoRegular"
+                    />
+
+                <View
+                    android:id="@+id/nv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d3ccc2"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="5dp"></View>
+
+
+                <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                    android:id="@+id/decripplace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Describe this place (Optional)"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:focusableInTouchMode="true"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="15dp"
+                    app:typeface="robotoRegular"
+                    />
+
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d3ccc2"
+                    android:layout_marginTop="5dp"></View>-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:src="@drawable/nature"
+                        android:gravity="center"
+                        android:tint="@color/newuigray"
+                        />
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1"
+                        android:text=""
+                        ></com.hhwt.travelplanner.widgets.font.RobotoTextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.7"
+                        android:orientation="vertical">
+
+                        <!-- <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                         android:id="@+id/listtype"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:hint="Listing Type"
+                         android:fontFamily="sans-serif"
+                         android:layout_gravity="left"
+                         android:padding="5dp"
+                         android:focusableInTouchMode="true"
+                             android:textAppearance="?android:textAppearanceMedium"
+                             android:background="@android:color/transparent"
+
+                         />-->
+
+
+                        <Spinner
+                            android:id="@+id/spinner1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+
+                            />
+
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="#d3ccc2"
+                            android:padding="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"></View>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/subcategoryfoodanddrink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+
+                        android:gravity="center"
+                        android:tint="@color/newuigray"
+                        />
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1"
+                        android:text=""
+                        ></com.hhwt.travelplanner.widgets.font.RobotoTextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.7"
+                        android:orientation="vertical">
+                        <Spinner
+                            android:id="@+id/subspinnerfoodanddrinks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+
+                            />
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="#d3ccc2"
+                            android:padding="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"></View>
+                    </LinearLayout>
+                    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp"
+                            android:weightSum="2">
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:src="@drawable/foodtick"
+                                android:gravity="center"
+                                android:tint="@color/newuigray"
+                                />
+                            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".1"
+                                android:text=""
+                                ></com.hhwt.travelplanner.widgets.font.RobotoTextView>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.7"
+                                android:orientation="vertical">
+
+                                <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                                    android:id="@+id/foodclassificationtext"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Food Classifications"
+                                    android:fontFamily="sans-serif"
+                                    android:layout_gravity="left"
+                                    android:padding="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:textAppearance="?android:textAppearanceMedium"
+                                    android:focusableInTouchMode="true"
+
+                                    />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="1dp"
+                                    android:background="#d3ccc2"
+                                    android:padding="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"></View>
+                            </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+                       <!-- <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="15dp"
+                            android:gravity="center"
+                            android:weightSum="5"
+                            >
+
+                            <CheckBox
+                                android:id="@+id/checkBox1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:layout_marginRight="10dp"
+                                android:theme="@style/checkBoxStyle"
+                                />
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4.5"
+                                android:textColor="@color/blackcolorview"
+                                android:text="Halal meat"
+                                android:textSize="19dp"
+                                android:layout_marginLeft="5dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:gravity="center"
+                            android:weightSum="5"
+                            >
+
+                            <CheckBox
+                                android:id="@+id/checkBox2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:layout_marginRight="10dp"
+                                android:theme="@style/checkBoxStyle"
+                                />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4.5"
+                                android:textColor="@color/blackcolorview"
+                                android:text="Seafood"
+                                android:textSize="19dp"
+                                android:layout_marginLeft="5dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:gravity="center"
+                            android:weightSum="5"
+                            >
+
+                            <CheckBox
+                                android:id="@+id/checkBox3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:layout_marginRight="10dp"
+                                android:theme="@style/checkBoxStyle"
+                                />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4.5"
+                                android:textColor="@color/blackcolorview"
+                                android:text="Vegetarian"
+                                android:textSize="19dp"
+                                android:layout_marginLeft="5dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:gravity="center"
+                            android:weightSum="5"
+                            >
+
+                            <CheckBox
+                                android:id="@+id/checkBox4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:layout_marginRight="10dp"
+                                android:theme="@style/checkBoxStyle"
+                                />
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4.5"
+                                android:textColor="@color/blackcolorview"
+                                android:text="Alcohol Served"
+                                android:textSize="19dp"
+                                android:layout_marginLeft="5dp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+                        </LinearLayout>-->
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/subcategoryprayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+
+                        android:gravity="center"
+                        android:tint="@color/newuigray"
+                        />
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1"
+                        android:text=""
+                        ></com.hhwt.travelplanner.widgets.font.RobotoTextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.7"
+                        android:orientation="vertical">
+                        <Spinner
+                            android:id="@+id/subspinnerprayer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+
+                            />
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="#d3ccc2"
+                            android:padding="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"></View>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/subcategorythingstodo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+
+                        android:gravity="center"
+                        android:tint="@color/newuigray"
+                        />
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1"
+                        android:text=""
+                        ></com.hhwt.travelplanner.widgets.font.RobotoTextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.7"
+                        android:orientation="vertical">
+                        <Spinner
+                            android:id="@+id/subspinnerthinstodo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+
+                            />
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="#d3ccc2"
+                            android:padding="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"></View>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:src="@drawable/mapnewui"
+                        android:gravity="center"
+                        android:tint="@color/newuigray"
+                        />
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1"
+                        android:text=""
+                        ></com.hhwt.travelplanner.widgets.font.RobotoTextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.7"
+                        android:orientation="vertical">
+                        <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                            android:id="@+id/addresslisting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Address"
+                            android:fontFamily="sans-serif"
+                            android:layout_gravity="left"
+
+                            android:padding="5dp"
+                            android:background="@android:color/transparent"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:focusableInTouchMode="true"
+
+                            />
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="#d3ccc2"
+                            android:padding="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"></View>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:src="@drawable/clockic"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+
+                        android:tint="@color/newuigray"
+                        />
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1"
+                        android:text=""
+                        ></com.hhwt.travelplanner.widgets.font.RobotoTextView>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/openhrscval"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                                android:id="@+id/open"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Opens"
+                                android:fontFamily="sans-serif"
+                                android:layout_gravity="left"
+                                android:focusableInTouchMode="true"
+                                android:padding="5dp"
+                                android:textColor="@color/blackcolorview"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:background="@android:color/transparent"
+                                ></com.hhwt.travelplanner.widgets.font.RobotoTextView>
+
+                            <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                                android:id="@+id/openhours"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="00:00"
+                                android:fontFamily="sans-serif"
+                                android:layout_gravity="left"
+                                android:focusableInTouchMode="true"
+                                android:padding="5dp"
+                                android:textAppearance="?android:textAppearanceMedium"
+                                android:background="@android:color/transparent"
+                                android:textColor="@color/blackcolorview"
+                                ></com.hhwt.travelplanner.widgets.font.RobotoEditText>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="#d3ccc2"
+                            android:padding="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"></View>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/closinghrsval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                                android:id="@+id/closin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Closes"
+                                android:fontFamily="sans-serif"
+                                android:layout_gravity="left"
+                                android:textColor="@color/blackcolorview"
+                                android:focusableInTouchMode="true"
+                                android:padding="5dp"
+                                android:background="@android:color/transparent"
+                                android:textAppearance="?android:textAppearanceMedium"
+
+                                />
+
+
+                            <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                                android:id="@+id/closinghour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="00:00"
+                                android:fontFamily="sans-serif"
+                                android:layout_gravity="left"
+                                android:focusableInTouchMode="true"
+                                android:padding="5dp"
+                                android:textColor="@color/blackcolorview"
+                                android:background="@android:color/transparent"
+                                android:textAppearance="?android:textAppearanceMedium"
+
+                                />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="#d3ccc2"
+                            android:padding="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"></View>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+
+                        android:gravity="center"
+                        android:tint="@color/newuigray"
+                        />
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1"
+                        android:text=""
+                        ></com.hhwt.travelplanner.widgets.font.RobotoTextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.7"
+                        android:orientation="vertical">
+                        <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                            android:id="@+id/egclose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="e.g. : Closed on Sundays"
+                            android:fontFamily="sans-serif"
+                            android:layout_gravity="left"
+                            android:padding="5dp"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:background="@android:color/transparent"
+                            android:focusableInTouchMode="true"
+
+                            />
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="#d3ccc2"
+                            android:padding="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"></View>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:src="@drawable/specialdealratenewui"
+                        android:gravity="center"
+                        android:tint="@color/newuigray"
+                        />
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1"
+                        android:text=""
+                        ></com.hhwt.travelplanner.widgets.font.RobotoTextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.7"
+                        android:orientation="vertical">
+                        <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                            android:id="@+id/pricerange"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price Range (Optional)"
+                            android:fontFamily="sans-serif"
+                            android:layout_gravity="left"
+                            android:padding="5dp"
+                            android:background="@android:color/transparent"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:focusableInTouchMode="true"
+
+                            />
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="#d3ccc2"
+                            android:padding="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"></View>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:src="@drawable/callnewui"
+                        android:gravity="center"
+                        android:tint="@color/newuigray"
+                        />
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1"
+                        android:text=""
+                        ></com.hhwt.travelplanner.widgets.font.RobotoTextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.7"
+                        android:orientation="vertical">
+                        <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                            android:id="@+id/contactnumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contact Number (Optional)"
+                            android:fontFamily="sans-serif"
+                            android:layout_gravity="left"
+
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:inputType="phone"
+                            android:digits="0123456789+"
+                            android:maxLength="13"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:focusableInTouchMode="true"
+
+                            />
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="#d3ccc2"
+                            android:padding="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"></View>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:src="@drawable/websitenewui"
+                        android:gravity="center"
+                        android:tint="@color/newuigray"
+                        />
+                    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1"
+                        android:text=""
+                        ></com.hhwt.travelplanner.widgets.font.RobotoTextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.7"
+                        android:orientation="vertical">
+                        <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                            android:id="@+id/weburl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Website URL (Optional)"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="sans-serif"
+                            android:layout_gravity="left"
+                            android:padding="5dp"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:focusableInTouchMode="true"
+
+                            />
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:background="#d3ccc2"
+                            android:padding="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"></View>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

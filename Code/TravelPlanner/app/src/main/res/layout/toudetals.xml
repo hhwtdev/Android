@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:layout_gravity="center">
+      <!--  <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/daytour"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:text="Make an Enquiry!"
+            android:textStyle="bold"
+            android:gravity="center"
+
+
+            android:background="#f4a01c"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            />-->
+
+
+
+
+        <TextView
+            android:id="@+id/daytour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgorangeui"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/planyourtour"
+            android:text="Make an Enquiry!"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#fff"
+            />
+
+
+
+
+       <!-- android:background="@color/tripcolor"-->
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:background="@color/bgfeedback"
+
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/bgfeedback"
+
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                android:weightSum="3"
+                >
+
+
+
+                <TextView
+                    android:id="@+id/share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:layout_weight="1.2"
+
+                    android:drawableTop="@drawable/share"
+
+                    android:layout_marginTop="8dp"
+                    android:drawableTint="@color/bgorangeui"
+
+
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/bgorangeui"
+                    android:textSize="18dp"
+                    />
+
+
+                <!--    <TextView
+                        android:id="@+id/save"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Save"
+                        android:layout_weight="1"
+
+                        android:drawableTop="@drawable/save_24"
+
+                        android:layout_marginTop="8dp"
+
+                        android:layout_marginBottom="8dp"
+                     android:layout_marginLeft="10dp"
+                   android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/feedtypecolor"
+                        android:textSize="18dp"
+                        />-->
+
+                <TextView
+                    android:id="@+id/checkavailability"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Make an Enquiry"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.8"
+                    android:drawableTop="@drawable/calander"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/feedtypecolor"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+
+            <android.support.design.widget.CoordinatorLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:fitsSystemWindows="false"
+                android:background="@color/bgfeedback"
+                >
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/main.appbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:contentScrim="@color/bgfeedback"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    android:fitsSystemWindows="false"
+                    >
+
+                    <android.support.design.widget.CollapsingToolbarLayout
+                        android:id="@+id/maincollapsing"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/bgfeedback"
+                        app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+
+
+                        >
+
+
+                        <RelativeLayout
+                            android:id="@+id/sliderhead"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/nv">
+
+                            <com.daimajia.slider.library.SliderLayout
+                                android:id="@+id/slider"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="5dp"
+                                custom:auto_cycle="true"
+                                custom:indicator_visibility="visible"
+                                custom:pager_animation="Background2Foreground"
+                                custom:pager_animation_span="3000" />
+                        </RelativeLayout>
+
+
+
+
+                    </android.support.design.widget.CollapsingToolbarLayout>
+                </android.support.design.widget.AppBarLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_anchor="@id/main.appbar"
+                    app:layout_anchorGravity="bottom|left|end"
+                    android:layout_marginTop="240dp"
+                    android:orientation="vertical"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/conteny"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:lineSpacingExtra="5dp"
+                        android:text="Traditional Japanese Calligraphy \nExperience with Master of the Art"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="8dp"
+                        />
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/rateview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:layout_marginRight="15dp"
+                    app:layout_anchor="@id/main.appbar"
+                    app:layout_anchorGravity="bottom|right|end"
+                    android:background="@drawable/tourprofile"
+                    >
+
+                    <TextView
+                        android:id="@+id/bgm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="from BGM"
+                        android:textStyle="normal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        />
+                    <TextView
+                        android:id="@+id/rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$186.67"
+                        android:textStyle="normal"
+                        android:layout_margin="10dp"
+                        android:textColor="#000000"
+                        android:textSize="25dp"
+                        />
+                </LinearLayout>
+
+
+            </android.support.design.widget.CoordinatorLayout>
+
+
+            <LinearLayout
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/bgfeedback"
+
+                >
+
+
+
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location :"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/blackcolorview"
+                    />
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/locationname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/overviewdescription"
+                    android:textColor="@color/blackcolorview"
+                    android:textSize="16dp"
+                    android:textStyle="normal"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:background="@color/bgfeedback"
+                >
+
+
+
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Overview :"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/blackcolorview"
+                    />
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/overviewmain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/overviewdescription"
+                    android:textColor="@color/blackcolorview"
+                    android:textSize="16dp"
+                    android:textStyle="normal"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+                android:text="What you can expect :"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/blackcolorview"
+                />
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/firstdes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/overviewdescription"
+                android:textColor="@color/blackcolorview"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                />
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+                android:text="Highlights :"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/blackcolorview"
+                />
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/seconddes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/overviewdescription"
+                android:textColor="@color/blackcolorview"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                />
+
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+                android:text="Inclusions :"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/blackcolorview"
+                />
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/thirddes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/overviewdescription"
+                android:textColor="@color/blackcolorview"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                />
+
+
+
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+                android:text="Exclusions :"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/blackcolorview"
+                />
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/thirdexclusion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/overviewdescription"
+                android:textColor="@color/blackcolorview"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                />
+
+
+
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+                android:text="Cancellation policy :"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:textColor="@color/blackcolorview"
+                />
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/cancelation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/overviewdescription"
+                android:textColor="@color/blackcolorview"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                />
+
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+                android:text="Additional information :"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:textColor="@color/blackcolorview"
+                />
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/additionalinformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/overviewdescription"
+                android:textColor="@color/blackcolorview"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                />
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+                android:text="Schedule :"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:textColor="@color/blackcolorview"
+                />
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+                android:text="Departure Point :"
+                android:textSize="22dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+
+                android:textColor="@color/blackcolorview"
+                />
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/depaturepoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:text="@string/overviewdescription"
+                android:textColor="@color/blackcolorview"
+                android:textStyle="normal"
+                />
+
+
+
+
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+                android:text="Departure Date :"
+                android:textSize="22dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+
+                android:textColor="@color/blackcolorview"
+                />
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/depaturedate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp"
+
+                android:textSize="16dp"
+                android:text="@string/overviewdescription"
+                android:textColor="@color/blackcolorview"
+                android:textStyle="normal"
+                />
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+                android:text="Departure Time :"
+                android:textSize="22dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+
+                android:textColor="@color/blackcolorview"
+                />
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/depaturetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp"
+
+                android:textSize="16dp"
+                android:text="@string/overviewdescription"
+                android:textColor="@color/blackcolorview"
+                android:textStyle="normal"
+                />
+
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+                android:text="Return details :"
+                android:textSize="22dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+
+                android:textColor="@color/blackcolorview"
+                />
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/returndetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp"
+
+                android:textSize="16dp"
+                android:text="@string/overviewdescription"
+                android:textColor="@color/blackcolorview"
+                android:textStyle="normal"
+                />
+
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+                android:text="Duration :"
+                android:textSize="22dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+
+                android:textColor="@color/blackcolorview"
+                />
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp"
+
+                android:textSize="16dp"
+                android:text="@string/overviewdescription"
+                android:textColor="@color/blackcolorview"
+                android:textStyle="normal"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>  

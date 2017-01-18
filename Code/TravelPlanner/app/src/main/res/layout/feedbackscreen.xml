@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgfeedback"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="5dp"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btnfeedback"
+        android:orientation="vertical">
+
+
+    <!--    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Feedback"
+            android:textColor="@color/colorPrimary"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Help make HHWT better by giving us your feedback!"
+            android:textColor="@color/pureblack"
+
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Questions:"
+            android:textColor="@color/material_brown_900"
+            android:textSize="20dp"
+
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="1 star = Strongly Disagree"
+            android:textColor="@color/colorSecondary"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/question"
+            android:textColor="@color/colorSecondary"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Q1:"
+            android:textColor="@color/material_brown_900"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:text="This app is useful for my trip planning (1 - 5 stars)"
+            android:textColor="@color/pureblack"
+            android:textSize="20dp" />
+
+
+        <RatingBar
+            android:id="@+id/feedratingBarplan"
+            style="@style/dialogMediaRationBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:clickable="false"
+
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing_medium"></RatingBar>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Q2:"
+            android:textColor="@color/material_brown_900"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="It is easy to find the best things to do, places to eat and prayer spaces in this app. (1 - 5 stars)"
+            android:textColor="@color/pureblack"
+            android:textSize="20dp" />
+
+
+        <RatingBar
+            android:id="@+id/feedratingBarprayer"
+            style="@style/dialogMediaRationBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:clickable="false"
+
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing_medium"></RatingBar>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Q3:"
+            android:textColor="@color/material_brown_900"
+            android:textSize="20dp"
+
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text=" I will recommend this app to my friend. (1- 5 stars)"
+            android:textColor="@color/pureblack"
+            android:textSize="20dp" />
+
+
+        <RatingBar
+            android:id="@+id/feedratingBarmyfriend"
+            style="@style/dialogMediaRationBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:clickable="false"
+
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing_medium"></RatingBar>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="What would you like else would you like to see in the app?"
+            android:textColor="@color/pureblack"
+            android:textSize="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/btnfeedback">
+
+
+            <EditText
+                android:id="@+id/liketosee"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                android:hint="Write your message here..."
+                android:textColor="@color/feedtypecolor"
+                android:textColorHint="@color/feedtypecolor" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Say something nice to the team"
+            android:textColor="@color/pureblack"
+            android:textSize="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/btnfeedback">
+
+
+            <EditText
+                android:id="@+id/teamsee"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                android:hint="Write your message here..."
+                android:textColor="@color/feedtypecolor"
+                android:textColorHint="@color/feedtypecolor" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="I would like to be contacted by the HHWT team with regard to my response."
+            android:textColor="@color/colorSecondary"
+            android:textSize="20dp" />
+
+
+        <CheckBox
+            android:id="@+id/cbyes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Yes"
+            android:textSize="20dp" />
+
+
+        <CheckBox
+            android:id="@+id/cbNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="No"
+            android:textSize="20dp" />
+
+        <!--   <TextView
+           android:layout_width="match_parent"
+           android:layout_height="30dp"
+          android:text="Add Your Rating"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="30dp"
+           android:textSize="20dp"
+           android:layout_marginLeft="30dp"
+           android:textColor="@color/colorPrimaryDark"
+           />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:layout_margin="20dp"
+       android:background="@drawable/btnfeedback"
+       >
+
+
+
+       <RatingBar
+           android:id="@+id/feedratingBar"
+           style="@style/dialogMediaRationBar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/address"
+           android:clickable="false"
+           android:layout_gravity="center_vertical"
+           android:layout_marginRight="@dimen/spacing_medium"
+           android:layout_marginTop="@dimen/spacing_medium"
+           android:layout_marginLeft="40dp"
+           android:gravity="center_vertical"
+           android:paddingBottom="@dimen/spacing_medium"></RatingBar>
+   </LinearLayout>
+
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="30dp"
+           android:text="Add Your Feedback"
+           android:layout_marginTop="20dp"
+           android:layout_marginRight="30dp"
+           android:textSize="20dp"
+           android:layout_marginLeft="30dp"
+           android:layout_marginBottom="10dp"
+           android:textColor="@color/colorPrimaryDark"
+           />
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="150dp"
+           android:layout_margin="20dp"
+           android:background="@drawable/btnfeedback"
+           >
+
+
+    <EditText
+        android:id="@+id/feedtext"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:hint="Write your message here..."
+        android:layout_gravity="start"
+        android:background="@android:color/transparent"
+        android:textColorHint="@color/feedtypecolor"
+        android:textColor="@color/feedtypecolor"
+        android:gravity="start"
+        android:layout_marginLeft="20dp"/>
+
+       </LinearLayout>
+   -->
+
+
+        <Button
+            android:id="@+id/feedsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bgyellow"
+            android:gravity="center"
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+</ScrollView>

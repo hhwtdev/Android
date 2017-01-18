@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (C) 2015 Antonio Leiva
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:id="@+id/topcard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:fitsSystemWindows="true"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="@dimen/cardview_default_elevation"
+    app:cardUseCompatPadding="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_xsmall"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:id="@+id/linearlay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="45"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.hhwt.travelplanner.widgets.SquareImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/loading" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="55"
+
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+
+
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/blackcolorview"
+                    android:fontFamily="sans-serif-medium"
+                   />
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:background="@android:color/transparent"
+
+
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/blackcolorview"
+                    app:typeface="robotoRegular" />
+
+       <!--         android:maxLines="2"-->
+
+
+         <!--       style="?android:attr/ratingBarStyleSmall"
+
+
+
+
+          style="@style/dialogMediaRationBar"-->
+
+
+
+                <LinearLayout
+                    android:id="@+id/item_ratingBars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subtitle"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/thingstodofirstfloat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="5"
+                    android:layout_marginRight="8dp"
+                    android:textSize="17dp"/>
+
+
+
+         <!--    <RatingBar
+                    android:id="@+id/item_ratingBar"
+
+                    style="@style/dialogMediaRationBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subtitle"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/spacing_medium"
+                    android:stepSize=".5"
+                    android:isIndicator="true"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/spacing_medium"></RatingBar>-->
+
+
+
+
+
+                    <RatingBar
+                        android:id="@+id/item_ratingBar"
+
+
+                        style="?android:attr/ratingBarStyleSmall"
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subtitle"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/spacing_medium"
+                        android:stepSize=".5"
+                        android:isIndicator="true"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/spacing_medium"></RatingBar>
+
+
+
+
+                   <!-- style="@style/dialogMediaRationBarss"
+                    style="?android:attr/ratingBarStyleSmall"-->
+</LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/item_ratingBars"
+                    android:layout_marginTop="30dp"
+                   >
+
+
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@android:color/transparent"
+                    android:maxLines="2"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="17dp"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    app:typeface="robotoRegular" />
+
+
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/nopray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address"
+                    android:background="@android:color/transparent"
+                    android:maxLines="2"
+                    android:text="No prayer space nearby"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:layout_marginBottom="5dp"
+
+                    android:fontFamily="sans-serif"
+                    app:typeface="robotoRegular" />
+
+
+</LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/specialdealsavalible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/combinedshapethings"
+                >
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/onetopcard"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/specialdelascountthingstodo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 Special Deals Available"
+                        android:textSize="19dp"
+                        android:gravity="center"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"
+
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/neuiblueclor"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rightarrow"
+                        android:gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:tint="@color/neuiblueclor"
+                        android:layout_marginRight="10dp"
+                        />
+            </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/txt_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:hapticFeedbackEnabled="true"
+                android:paddingLeft="10dp"
+                android:text="Deleted"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/txt_undo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="Undo"
+                android:textColor="@color/cpb_blue_dark" />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+</android.support.v7.widget.CardView>

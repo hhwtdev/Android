@@ -1,0 +1,121 @@
+[
+    {
+        "outputFile": "/Users/jeyavijay/Development/HNewpart1/26filterfix_comingrelease/NewUiHHWT/Android/Code/TravelPlanner/Materialtimepicker/build/intermediates/res/merged/release/values-land/values-land.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 69,
+                    "endOffset": 120
+                },
+                "from": {
+                    "file": "/Users/jeyavijay/Development/HNewpart1/26filterfix_comingrelease/NewUiHHWT/Android/Code/TravelPlanner/Materialtimepicker/src/main/res/values-land/dimens.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1089,
+                        "endColumn": 69,
+                        "endOffset": 1154
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 125,
+                    "endColumn": 51,
+                    "endOffset": 172
+                },
+                "from": {
+                    "file": "/Users/jeyavijay/Development/HNewpart1/26filterfix_comingrelease/NewUiHHWT/Android/Code/TravelPlanner/Materialtimepicker/src/main/res/values-land/dimens.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 800,
+                        "endColumn": 51,
+                        "endOffset": 847
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 177,
+                    "endColumn": 53,
+                    "endOffset": 226
+                },
+                "from": {
+                    "file": "/Users/jeyavijay/Development/HNewpart1/26filterfix_comingrelease/NewUiHHWT/Android/Code/TravelPlanner/Materialtimepicker/src/main/res/values-land/dimens.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 852,
+                        "endColumn": 53,
+                        "endOffset": 901
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 231,
+                    "endColumn": 59,
+                    "endOffset": 286
+                },
+                "from": {
+                    "file": "/Users/jeyavijay/Development/HNewpart1/26filterfix_comingrelease/NewUiHHWT/Android/Code/TravelPlanner/Materialtimepicker/src/main/res/values-land/dimens.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 967,
+                        "endColumn": 59,
+                        "endOffset": 1022
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 291,
+                    "endColumn": 60,
+                    "endOffset": 347
+                },
+                "from": {
+                    "file": "/Users/jeyavijay/Development/HNewpart1/26filterfix_comingrelease/NewUiHHWT/Android/Code/TravelPlanner/Materialtimepicker/src/main/res/values-land/dimens.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1027,
+                        "endColumn": 60,
+                        "endOffset": 1083
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 352,
+                    "endColumn": 59,
+                    "endOffset": 407
+                },
+                "from": {
+                    "file": "/Users/jeyavijay/Development/HNewpart1/26filterfix_comingrelease/NewUiHHWT/Android/Code/TravelPlanner/Materialtimepicker/src/main/res/values-land/dimens.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 907,
+                        "endColumn": 59,
+                        "endOffset": 962
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+
+
+
+    <!--    <RelativeLayout
+            android:id="@+id/fil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+
+android:layout_marginRight="15dp"
+            android:layout_marginBottom="2dp"
+
+            >
+
+
+
+        <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/cityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scity"
+            android:paddingTop="5dp"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/bgyellow"
+            android:textStyle="bold"
+            app:typeface="robotoBold" />
+
+
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                        android:id="@+id/filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/tripcolor"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="FILTERS"
+                        android:textStyle="normal"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="#000000"
+                         />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/searchicon"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/searchgreen" />
+            <com.hhwt.travelplanner.widgets.font.RobotoEditText
+                android:id="@+id/entertripname"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="left|center"
+                android:background="@color/white"
+                android:ems="10"
+
+                android:layout_weight="1.5"
+                android:hint="@string/search"
+                android:scrollbars="horizontal"
+                android:padding="8dp"
+                android:textStyle="normal"
+                android:singleLine="true"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@color/feedtypecolor"
+                android:textColorHint="@color/feedtypecolor"
+                />
+        </LinearLayout>
+
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+
+        android:weightSum="2">
+
+           <com.hhwt.travelplanner.widgets.font.RobotoTextView
+               android:id="@+id/daytour"
+               android:layout_width="0dp"
+               android:layout_height="30dp"
+               android:layout_weight="1"
+               android:layout_marginRight="10dp"
+               android:background="#e86e02"
+
+               android:layout_gravity="center"
+android:gravity="center"
+               android:textSize="18dp"
+               android:text="Day Tours"
+               android:textStyle="normal"
+               android:textAppearance="?android:textAppearanceMedium"
+               android:textColor="#000000"
+               />
+           <com.hhwt.travelplanner.widgets.font.RobotoTextView
+               android:id="@+id/tourpackage"
+               android:layout_width="0dp"
+               android:layout_height="30dp"
+               android:layout_weight="1"
+android:layout_marginLeft="10dp"
+               android:layout_gravity="center"
+
+               android:gravity="center"
+               android:background="#ffffff"
+
+
+               android:text="Tour Packages"
+               android:textStyle="normal"
+               android:textAppearance="?android:textAppearanceMedium"
+               android:textColor="#000000"
+               />
+
+        </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+    <ListView
+        android:id="@+id/rvsave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/topcard"
+        android:layout_below="@+id/topcardheader"
+        android:background="@color/bgfeedback"
+        android:divider="#386b61"
+        android:dividerHeight="2.5sp"
+        />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

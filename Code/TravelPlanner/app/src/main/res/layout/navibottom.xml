@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <!--<android.support.v4.view.ViewPager
+
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />-->
+
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/neuiblueclor"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--<ImageView
+            android:id="@+id/apptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:clickable="true"
+            android:src="@drawable/app_name"
+            android:tint="@color/white" />-->
+
+
+        <ImageView
+            android:id="@+id/backar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:src="@drawable/backarrow"
+            android:tint="@color/white" />
+
+
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/apptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+         android:text="HHWT"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="20dp"
+
+
+            android:tint="@color/white" />
+
+
+        <TextView
+            android:id="@+id/countryapptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="HHWT"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif"
+            android:textSize="17dp"
+
+
+            android:tint="@color/white" />
+
+
+
+</LinearLayout>
+
+
+
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/filter"
+
+            android:tint="@color/white"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/searchviewimg"
+            android:tint="@color/white"
+            android:visibility="gone" />
+
+
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:src="@android:drawable/ic_menu_edit"
+            android:tint="@color/white"
+            android:visibility="gone" />
+
+        <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            local:typeface="robotoRegular" />
+
+        <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            local:typeface="robotoRegular" />
+    </android.support.v7.widget.Toolbar>
+
+    <com.quinny898.library.persistentsearch.SearchBox
+        android:id="@+id/searchbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginRight="-6dp"
+        android:layout_marginTop="-6dp"
+        android:visibility="gone" />
+
+
+
+    <FrameLayout
+        android:id="@+id/container_body"
+        android:layout_width="match_parent"
+android:layout_height="0dp"
+        android:layout_weight="1"    />
+
+<!--    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary"
+></android.support.design.widget.TabLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/btmhide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+    <LinearLayout
+        android:id="@+id/explorevi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="5dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp"
+        >
+
+  <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+
+
+      android:src="@drawable/explore"
+
+
+      android:scaleType="centerInside" />
+            <!--android:src="@drawable/explore"
+              android:src="@drawable/newexplorenewui"
+              -->
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#7f7f7f"
+            android:textSize="14sp"
+          android:text="Explore" />
+    </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/guidvi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/newstarval"
+                android:tint="@color/newuigray"
+                android:scaleType="centerInside" />
+
+         <!--   android:src="@drawable/newguides"-->
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:textAllCaps="false"
+                android:textColor="#7f7f7f"
+
+
+                android:text="Guides" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/tripvi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="5dp"
+            android:layout_weight="1"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/befinewui"
+            android:tint="@color/newuigray"
+            android:scaleType="centerInside" />
+
+           <!-- android:src="@drawable/newtrips"-->
+
+
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAllCaps="false"
+            android:textColor="#7f7f7f"
+            android:textStyle="bold"
+            android:textSize="14sp"
+
+            android:text="Trips" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profilevi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+            android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/icon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/newtournewui"
+            android:tint="@color/newuigray"
+            android:scaleType="centerInside" />
+
+          <!--  android:src="@drawable/newtours"-->
+
+
+        <TextView
+            android:id="@+id/title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAllCaps="false"
+            android:textColor="#7f7f7f"
+
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="Tours" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/morevi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/icon5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/newmorenewui"
+
+                android:tint="@color/newuigray"
+                android:scaleType="centerInside" />
+
+           <!-- android:src="@drawable/newmore"
+            android:tint="#7f7f7f"
+-->
+            <TextView
+                android:id="@+id/title5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAllCaps="false"
+                android:textColor="#7f7f7f"
+
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="More" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

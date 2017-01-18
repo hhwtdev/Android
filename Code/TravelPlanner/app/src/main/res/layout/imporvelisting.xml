@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/busness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/busisicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/locationoff"
+            android:tint="#fff"
+            app:backgroundTint="@color/main_color_grey_600" />
+
+
+        <TextView
+            android:id="@+id/businessclosed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Business Permanently Closed"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/blackcolorview"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/incorrect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/incorrecticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/incorrectmaplocation"
+            android:tint="#fff"
+            app:backgroundTint="@color/main_color_grey_600" />
+
+
+        <TextView
+            android:id="@+id/incorrectmaolocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Incorrect Map Location"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/blackcolorview"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/openhrs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/openhrsicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/clockic"
+            android:tint="#fff"
+            app:backgroundTint="@color/main_color_grey_600" />
+
+
+        <TextView
+            android:id="@+id/openhrshours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Inaccurate Opening Hours"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/blackcolorview"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/suggesteditclick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/suggestediticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/implisting"
+            android:tint="#fff"
+            app:backgroundTint="@color/main_color_grey_600" />
+
+
+        <TextView
+            android:id="@+id/suggestedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Suggest Edits"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/blackcolorview"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

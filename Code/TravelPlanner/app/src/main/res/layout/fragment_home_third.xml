@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBackground"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".activity.HomeFIrstFragment">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight=".5"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/review"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!-- Session photo -->
+            <com.hhwt.travelplanner.widgets.SquareImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:padding="@dimen/activity_vertical_margin"
+                android:src="@drawable/review_one" />
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="@string/title_review"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/colorPrimary"
+                app:typeface="robotoBold" />
+        </LinearLayout>
+
+        <LinearLayout
+android:id="@+id/tour"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+            <com.hhwt.travelplanner.widgets.SquareImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:padding="@dimen/activity_vertical_margin"
+                android:src="@drawable/tours_one" />
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="@string/tour"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/colorPrimary"
+                app:typeface="robotoBold" />
+          <!-- android:id="@+id/votefornext"-->
+
+
+
+            <!-- Session photo -->
+            <!-- Session photo -->
+          <!--  <com.hhwt.travelplanner.widgets.SquareImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:padding="@dimen/activity_vertical_margin"
+                android:src="@drawable/my_trip_120" />
+
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="@string/title_vote"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/colorPrimary"
+                app:typeface="robotoBold" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".5"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/newreview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!-- Session photo -->
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- android:id="@+id/votefornext"-->
+
+
+
+            <!-- Session photo -->
+            <!-- Session photo -->
+            <!--  <com.hhwt.travelplanner.widgets.SquareImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_marginLeft="@dimen/activity_vertical_margin"
+                  android:layout_marginRight="@dimen/activity_vertical_margin"
+                  android:padding="@dimen/activity_vertical_margin"
+                  android:src="@drawable/my_trip_120" />
+
+              <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:maxLines="2"
+                  android:minLines="2"
+                  android:text="@string/title_vote"
+                  android:textAppearance="?android:textAppearanceLarge"
+                  android:textColor="@color/colorPrimary"
+                  app:typeface="robotoBold" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

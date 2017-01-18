@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splashscreen">
+
+        <LinearLayout
+            android:id="@+id/main_ui_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            >
+<!--<Button
+    android:id="@+id/loginandregister"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginRight="50dp"
+    android:layout_marginLeft="50dp"
+    android:text="Login / Register"
+    android:gravity="center"
+    android:textStyle="normal"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+
+    android:textAppearance="@android:style/TextAppearance.Small"
+    android:textSize="16sp"
+    android:background="@color/drakgreen"
+    />-->
+
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/greeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#333"
+                    android:textSize="18sp" />
+
+                <com.facebook.login.widget.ProfilePictureView
+                    android:id="@+id/profilePicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_horizontal"
+                    facebook:com_facebook_preset_size="normal" />
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="40dp"
+            android:weightSum="1">
+
+<!--
+            <com.hhwt.travelplanner.widgets.MaterialRippleLayout
+                style="@style/RippleStyle"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignLeft="@+id/loginbutton"
+                android:layout_alignRight="@+id/loginbutton"
+                android:layout_gravity="center"
+
+                android:layout_marginBottom="@dimen/text_size_small"
+
+                android:focusable="false"
+                facebook:rippleColors="@color/main_color_A100">
+
+                <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                    android:id="@+id/loginandregister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/tripcolor"
+                    android:gravity="center"
+                    android:padding="@dimen/
+                    spacing_medium"
+                    android:text="Login / Register"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:textAppearance"
+                    android:textColor="@color/white"
+                    facebook:typeface="robotoBold" />
+
+            </com.hhwt.travelplanner.widgets.Materi-->a_display" />-->
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginRight="40dp"
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="40dp"
+    android:background="#3b5998"
+    >
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/loginbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/activity_horizontal_margin"
+                facebook:com_facebook_confirm_logout="false"
+                facebook:com_facebook_tooltip_mode="never_display"
+                android:layout_weight="0.30" />
+
+
+</LinearLayout>
+            <com.hhwt.travelplanner.widgets.font.RobotoTextView
+                android:id="@+id/loginandregister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/tripcolor"
+                android:gravity="center"
+                android:text="Login / Register"
+                android:textAllCaps="false"
+
+android:layout_marginTop="25dp"
+android:padding="10dp"
+                android:textColor="@color/white"
+                facebook:typeface="robotoBold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

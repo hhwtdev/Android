@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/bgyellow"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+   <!-- <ImageView
+        android:id="@+id/apptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:clickable="true"
+        android:src="@drawable/balloon_overlay_close"
+        android:tint="@color/blackcolorview" />
+-->
+        <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/cityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filters"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:textAllCaps="false"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/blackcolorview"
+            android:textStyle="normal"
+             />
+
+    <!--    <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/blackcolorview"
+            android:textStyle="normal"
+            />
+-->
+    </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+android:weightSum="3"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+          android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp"
+        >
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="#231f20"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            style="@android:style/Widget.Spinner.DropDown"
+            android:background="@drawable/shape_drop_down_normal"
+></Spinner>
+
+
+     <!--      />/ android:background="@drawable/custom_spinner_background"
+            android:spinnerMode="dropdown"
+
+            />-->
+
+        <Spinner
+            android:id="@+id/spinnerdrop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="#231f20"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            style="@android:style/Widget.Spinner.DropDown"
+            android:background="@drawable/shape_drop_down_normal"
+            />
+
+      <!--  <Spinner
+            android:id="@+id/spinnerseatbelt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="#231f20"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            style="@android:style/Widget.Spinner.DropDown"
+            android:background="@drawable/shape_drop_down_normal"
+            />-->
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+  android:layout_margin="15dp"
+android:layout_weight=".8"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/clearall"
+            android:layout_width="170dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:background="#e86e02"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Clear All"
+            android:textStyle="bold"
+
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#000000"
+            />
+        <com.hhwt.travelplanner.widgets.font.RobotoTextView
+            android:id="@+id/donefilter"
+            android:layout_width="170dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:background="#e86e02"
+android:gravity="center"
+            android:layout_gravity="center"
+android:layout_marginTop="10dp"
+            android:text="Done"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#000000"
+            />
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>
